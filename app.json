@@ -1,37 +1,32 @@
 {
   "expo": {
-    "name": "Reppy",
-    "slug": "reppy",
+    "name": "Reppy - AI Fitness Coach",
+    "slug": "reppy-mobile",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "icon": "./assets/images/icon.png",
+    "scheme": "reppy",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.reppy.app"
+      "bundleIdentifier": "com.reppy.mobile"
     },
     "android": {
+      "package": "com.reppy.mobile",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "package": "com.reppy.app"
+        "foregroundImage": "./assets/images/icon.png",
+        "backgroundColor": "#0073e6"
+      }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/images/favicon.png"
     },
-    "scheme": "reppy",
-    "plugins": [
-      "expo-router"
-    ]
+    "plugins": ["expo-router", "expo-font", "expo-web-browser"],
+    "experiments": {
+      "typedRoutes": true
+    }
   }
 }
-

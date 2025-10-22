@@ -1,25 +1,60 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     "./app/**/*.{js,jsx,ts,tsx}",
-    "./components/**/*.{js,jsx,ts,tsx}"
+    "./components/**/*.{js,jsx,ts,tsx}",
   ],
   presets: [require("nativewind/preset")],
   theme: {
     extend: {
       colors: {
-        primary: '#6366f1',
-        secondary: '#8b5cf6',
-        background: '#ffffff',
-        surface: '#f3f4f6',
-        text: '#111827',
-        textSecondary: '#6b7280',
-        border: '#e5e7eb',
-        error: '#ef4444',
+        primary: {
+          50: '#e6f2ff',
+          100: '#b3d9ff',
+          200: '#80bfff',
+          300: '#4da6ff',
+          400: '#1a8cff',
+          500: '#0073e6',
+          600: '#005bb3',
+          700: '#004280',
+          800: '#002a4d',
+          900: '#00111a',
+        },
+        secondary: {
+          50: '#e6fff2',
+          100: '#b3ffd9',
+          200: '#80ffc0',
+          300: '#4dffa6',
+          400: '#1aff8d',
+          500: '#00e673',
+          600: '#00b359',
+          700: '#008040',
+          800: '#004d26',
+          900: '#001a0d',
+        },
+        neutral: {
+          50: '#f8f9fa',
+          100: '#f1f3f5',
+          200: '#e9ecef',
+          300: '#dee2e6',
+          400: '#ced4da',
+          500: '#adb5bd',
+          600: '#6c757d',
+          700: '#495057',
+          800: '#343a40',
+          900: '#212529',
+        },
         success: '#10b981',
+        error: '#ef4444',
+        warning: '#f59e0b',
+      },
+      fontFamily: {
+        'sans': ['System'],
+      },
+      spacing: {
+        '128': '32rem',
+        '144': '36rem',
       },
     },
   },
   plugins: [],
-}
-
+};
